@@ -1,0 +1,51 @@
+/*makes container size include padding and border*/
+* {
+  box-sizing: border-box;
+
+}
+/*body is full screen*/
+body{
+height: 100%;
+
+}
+/*centers all the div content*/
+div{
+	margin: auto;
+	width: 50%;
+	
+}
+
+header{
+	background-color: lightgrey; /*header color*/
+}
+h1{
+	margin:0; /*remove white space at top of page*/
+}
+
+h1, header h2, h3, nav{
+	text-align: center; /*center text elements*/
+}
+
+h1, h2, h3, a, p, li {
+font-family: Arial, Helvetica, sans-serif; /*all text elements sans serif*/
+}
+a{ /*link styling */
+	color: black;
+	font-size: 100%;
+	padding: 1%;
+	margin:0; 
+}
+
+a:hover {
+	color: blue; /*turn blue when hover over links*/
+}
+
+footer{
+	background-color: lightgrey;/*footer styling.*/
+padding-top: : 1%;
+padding-bottom: 1%;
+
+}
+h3{
+	padding: .5%;
+}
