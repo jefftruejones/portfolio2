@@ -1,95 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	
-	<meta charset="utf-8" />
-	
-	<meta name="viewport" content="width=device-width" />
-	
-	<title>Jeff True Jones | Web Developer</title>
+  <head>
+    <meta charset="utf-8" />
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Jeff True Jones | Software Engineer</title>
 
-</head>
-<body>
-	<!--top of page -->
-	<header>
-		
-		<div>
-		<h1>Jeff True Jones</h1>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-		<h2>Web Developer</h2>
-		
-		<nav>
-			<a href="#intro">Home</a>
-			<a href="#aboutme">About Me</a>
-			<a href="#contact">Contact</a>	
-		</nav>
-		</div>
-	
-	</header>
-	
-	<!--main section of page-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!--top of page -->
+    <header>
+      <h1>Jeff True Jones</h1>
 
-	<main>
-		
-		<!--intro section-->
-<div>
-		<article id="intro">
-			
-			<img src="jeffjones.jpg" width="300" alt="Photo of Jeff True Jones, Web Developer" />
+      <h2>Software Engineer</h2>
+      <!--main navigation-->
+      <nav>
+        <ul>
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-			<h2>Hey There! I'm Jeff True Jones.</h2>
+    <!--main section of page-->
 
-			<p>I am a Web Developer who lives in Durham, North Carolina.</p>
+    <main>
+      <!--intro section-->
 
-			<p>Before pursing web development, I worked as a full-time cruise ship musician and entertainer, and as a music teacher.</p>
+      <article id="intro">
+        <div class="item">
+          <img
+            src="jeffjones.jpg"
+            width="300"
+            alt="Photo of Jeff True Jones, Web Developer"
+          />
+        </div>
 
-			<p>The experience I have gained from the entertainment industry inspires me to create web sites and web applications that are:</p>
+        <div class="item">
+          <h2>Hey There! I'm Jeff True Jones.</h2>
 
-			<ol>
-				<li>creative</li>
-				<li>accessible</li>
-				<li>scaleable</li>
-			</ol>
-		
-		</article>
-</div>
-		<hr>
+          <p>I am a Software Engineer who lives in Durham, North Carolina.</p>
 
-		<!--about me section-->
-		<div>
-		<article id="aboutme">
-			<h2>About Jeff True Jones</h2>
+          <p>
+            I am currently pursuing software engineering via the Engineering
+            Immersion progam with Thinkful, and I am special because I
+            previously worked as a full-time cruise ship musician and
+            entertainer, and as a music teacher.
+          </p>
 
-			<p>I am very passionate about web development. I first began with designing websites for myself and and my other friends who are musicians, and my passion took off from there.</p>
+          <p>
+            The experience I have gained from the entertainment industry
+            inspires me to create web sites and web applications that are:
+          </p>
 
-			<p>I am excited to collaborate with other developers and designers to make amazing websites and web applications!</p>
+          <ol>
+            <li>creative</li>
+            <li>accessible</li>
+            <li>scaleable</li>
+          </ol>
+        </div>
+      </article>
 
-		
-		<p>Some of my interests outside of coding include:</p>
+      <!--about me section-->
 
-			<ul>
-				<li>writing music</li>
-				<li>getting coffee with my friends</li>
-				<li>going for walks on trails with my dog and my husband</li>
-			</ul>
-		</article>
-	</div>
+      <article id="aboutme">
+        <div class="item">
+          <div class="subitem">
+            <h2>About Jeff True Jones</h2>
+            <p>
+              I am very passionate about web development. I first began with
+              designing websites for myself and and my other friends who are
+              musicians, and my passion took off from there.
+            </p>
 
-	</main>
+            <p>
+              I am excited to collaborate with other developers and designers to
+              make amazing websites and web applications!
+            </p>
+            <p>
+              Some of my interests outside of coding include: writing music,
+              getting coffee with my friends,going for walks on trails with my
+              dog and my husband.
+            </p>
+          </div>
+          <div class="subitem">
+            <img
+              src="jeffjonespiano.jpeg"
+              width="300"
+              alt="Photo of Jeff True Jones at a black piano"
+            />
+          </div>
+        </div>
 
-	<!--the footer will serve as the contact section-->
-	<footer id="contact">
-		<h3>Contact Me</h3>
-		<nav>
-			<a href="https://www.linkedin.com/in/jeff-true-jones-215baa148/">LinkedIn</a>
-			<a href="https://github.com/jefftruejones">Git Hub</a>
-			<a href="mailto:jeffreydonovanjones@gmail.com">Email Me</a>
-		</nav>
-	</footer>
+        <div class="item">
+          <div class="subitem" id="services">
+            <p>My web development services include the following:</p>
+            <ul>
+              <li>
+                the creation of custom web applications utilizing HTML, CSS,
+                JavaScript, and React.JSS
+              </li>
+              <li>
+                mobile-first development to optomize your web presence across
+                devices
+              </li>
+              <li>
+                all other aspects of web design, development, and management.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
 
-</body>
+      <article id="projects">
+        <h2>Projects</h2>
+        <div class="item">
+          <div class="portfolio">
+            <a
+              href="https://github.com/jefftruejones/project-local-library"
+              target="_blank"
+            >
+              <h3>Local Library</h3>
+
+              <img
+                src="library.jpeg"
+                width="300"
+                alt="Photo of a man in a library"
+              />
+              <p>
+                I designed the backend code for a local library project. I
+                designed the code the makes the user interface function. It was
+                an interesting and challenging project that required me to
+                access and manipulate data in many forms and from many sources.
+              </p>
+            </a>
+          </div>
+
+          <div class="portfolio">
+            <a
+              href="https://github.com/jefftruejones/project-decoder-ring"
+              target="_blank"
+            >
+              <h3>Decoder Ring</h3>
+
+              <img
+                src="decoder.jpeg"
+                width="300"
+                alt="Photo of a decoder ring"
+              />
+              <p>
+                I designed the backend code for a decoder and encrypter. I
+                designed the code that makes the user interface function. It was
+                a challenging project that focused on string manipulation.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="portfolio">
+            <a href="#projects">
+              <h3>Future Project</h3>
+
+              <img
+                src="comingsoon.jpg"
+                width="300"
+                alt="Photo of a decoder ring"
+              />
+              <p>
+                This is where I will put the description of a future project.
+              </p>
+            </a>
+          </div>
+
+          <div class="portfolio">
+            <a href="#projects">
+              <h3>Future Project</h3>
+
+              <img
+                src="comingsoon.jpg"
+                width="300"
+                alt="Photo of a decoder ring"
+              />
+              <p>
+                This is where I will put the description of a future project.
+              </p>
+            </a>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!--the footer will serve as the contact section-->
+    <footer id="contact">
+      <!--contact me form-->
+      <h3>Contact Me</h3>
+      <form action="https://formspree.io/f/mjvjbqgn" method="post">
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name" autofocus required />
+        <label for="email">E-mail:</label>
+        <input id="email" type="text" name="email" required />
+        <label for="form-message">Your message:</label>
+        <textarea id="form-message" name="message"></textarea>
+        <button type="submit" name="submit">Submit</button>
+      </form>
+
+      <!--professional social media links here-->
+      <nav>
+        <a href="https://www.linkedin.com/in/jeff-true-jones-215baa148/"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/jefftruejones">GitHub</a>
+        <a href="mailto:jeffreydonovanjones@gmail.com">Email Me</a>
+      </nav>
+    </footer>
+  </body>
 </html>

@@ -1,51 +1,157 @@
-/*makes container size include padding and border*/
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+} /*this block establishes no white space between tags, true to size boxes, and the font for the web page*/
+header {
+  background-color: lightgrey; /*header color*/
+  color: white;
+}
+h1,
+h2 {
+  margin: 0; /*remove white space at top of page*/
+  text-align: center;
+  padding-top: 20px;
+}
+header nav {
+  /*responsive nav*/
+  display: flex;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+header nav li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+header nav ul li:last-child a {
+  margin-right: 0; /*helps make nav truly center*/
+}
+article {
+  display: flex;
+  flex-direction: column; /*makes the main content in column form*/
+}
+article h2,
+p,
+ul,
+ol {
+  margin: 3%;
+}
+.item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 10% 10% 10%;
+}
+.item img {
+  width: 100%;
+}
+#intro {
+  background-color: mintcream;
+  padding-top: 2%;
+}
+#aboutme {
+  background-color: azure;
+  margin: 0;
+}
 
+#projects {
+  background-color: aliceblue;
 }
-/*body is full screen*/
-body{
-height: 100%;
-
-}
-/*centers all the div content*/
-div{
-	margin: auto;
-	width: 50%;
-	
+#projects .item div a {
+  height: 100%;
+  text-decoration: none;
+  color: black;
 }
 
-header{
-	background-color: lightgrey; /*header color*/
+footer {
+  background-color: lightgrey;
+  color: white;
+  text-align: center;
+  margin: 0;
+  display: block;
 }
-h1{
-	margin:0; /*remove white space at top of page*/
+footer form {
+  margin: auto;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+}
+footer form input {
+  height: 2.5em;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer nav a {
+  text-decoration: none;
+  color: white;
+  padding: 1em;
 }
 
-h1, header h2, h3, nav{
-	text-align: center; /*center text elements*/
-}
+@media all and (min-width: 600px) {
+  /*styling for larger screens*/
+  header {
+    display: flex;
+    justify-content: space-around; /*makes the nav go left and right as the screen gets bigger*/
+    padding: 0 30px;
+  }
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+  header nav {
+    margin-top: 8px;
+  }
+  header nav ul li a:hover {
+    background-color: white; /*highlits link text when hovering*/
+    color: black;
+  }
+  article {
+    display: flex;
+    flex-direction: row; /*display content in rows for big screens*/
+  }
 
-h1, h2, h3, a, p, li {
-font-family: Arial, Helvetica, sans-serif; /*all text elements sans serif*/
-}
-a{ /*link styling */
-	color: black;
-	font-size: 100%;
-	padding: 1%;
-	margin:0; 
-}
+  article > h2 {
+    text-align: center;
+  }
 
-a:hover {
-	color: blue; /*turn blue when hover over links*/
-}
+  #projects,
+  #aboutme {
+    flex-direction: column; /*stay column for the larger elements while in big screen*/
+  }
+  #aboutme .item {
+    flex-direction: row; /*display smaller items in rows*/
+  }
+  #aboutme .item .subitem {
+    margin-left: 3%;
+  }
 
-footer{
-	background-color: lightgrey;/*footer styling.*/
-padding-top: : 1%;
-padding-bottom: 1%;
+  #services {
+    margin: auto;
+    width: 75%;
+  }
+  #projects .item {
+    flex-direction: row; /*display smaller items in rows*/
+  }
+  #projects .item div {
+    display: flex;
 
-}
-h3{
-	padding: .5%;
+    flex-direction: column;
+  }
+  #projects .item div a {
+    height: 100%;
+    text-decoration: none;
+    color: black;
+  }
+  #projects .item div img {
+    height: 85%;
+  }
 }
