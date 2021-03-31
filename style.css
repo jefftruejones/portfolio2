@@ -98,6 +98,25 @@ footer nav a {
 }
 .portfolio {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#projects .item div {
+  display: flex;
+  margin-left: 2%;
+  flex-direction: column;
+  margin-top: 6%;
+}
+
+#projects .item div > a {
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+#projects .item div img {
+  height: 85%;
 }
 
 @media all and (min-width: 875px) {
@@ -146,17 +165,8 @@ footer nav a {
   #projects .item {
     flex-direction: row; /*display smaller items in rows*/
   }
-  #projects .item div {
-    display: flex;
-    margin-left: 2%;
-    flex-direction: column;
-  }
-  #projects .item div a {
-    height: 100%;
-    text-decoration: none;
-    color: black;
-  }
-  #projects .item div img {
-    height: 85%;
+  .portfolio {
+    background-color: white;
+    padding: 2%;
   }
 }
