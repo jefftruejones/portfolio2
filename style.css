@@ -94,9 +94,13 @@ footer nav a {
   text-decoration: none;
   color: white;
   padding: 1em;
+  flex: 1;
+}
+.portfolio {
+  flex: 1;
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 875px) {
   /*styling for larger screens*/
   header {
     display: flex;
@@ -132,6 +136,7 @@ footer nav a {
   }
   #aboutme .item .subitem {
     margin-left: 3%;
+    flex: 1;
   }
 
   #services {
@@ -143,7 +148,7 @@ footer nav a {
   }
   #projects .item div {
     display: flex;
-
+    margin-left: 2%;
     flex-direction: column;
   }
   #projects .item div a {
