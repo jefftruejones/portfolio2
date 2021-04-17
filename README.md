@@ -1,5 +1,6 @@
-# portfolio2
-* Context: *
+# portfolio2 
+
+# Context
 
 > * This is my professional porfolio of web development work.
 
