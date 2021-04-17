@@ -31,4 +31,4 @@ and include live versions of the applications I've developed.
 
 # Screenshots/Images: 
 
-> * coming soon.
+> * I do not currently have screenshots, but you can view my live portfolio page [here](https://jefftruejones.github.io/portfolio2/).
